@@ -1,0 +1,32 @@
+:root{--ink:#0c2236;--paper:#eef3f7;--plate:#0f3b5f;--line:#9fc1da;--signal:#e8a33d;--muted:#46627a}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.125rem/1.65 "Source Serif 4",Georgia,"Times New Roman",serif}
+a{color:var(--plate);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid var(--signal);outline-offset:2px;border-radius:2px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1.25rem}
+header.site{background:var(--plate);color:#fff}
+header.site nav{display:flex;flex-wrap:wrap;gap:1.25rem;align-items:baseline;padding:1rem 0}
+header.site a{color:#fff;font-family:"Archivo",Arial,sans-serif;font-stretch:112%;text-decoration:none}
+header.site a.brand{font-weight:800;font-size:1.15rem;margin-right:auto}
+header.site a:not(.brand){font-size:.95rem;opacity:.85}
+header.site a:hover,header.site a[aria-current]{opacity:1;text-decoration:underline}
+.hero{background:var(--plate);color:#fff;padding:1rem 0 3rem}
+.hero h1{font-family:"Archivo",Arial,sans-serif;font-stretch:118%;font-weight:800;font-size:clamp(2.1rem,6vw,3.4rem);line-height:1.05;letter-spacing:-.01em;margin:.5rem 0 1rem;max-width:16ch}
+.hero p{max-width:34rem;color:#dbe8f2;margin:0}
+.hero svg{display:block;width:100%;height:auto;margin:1.5rem 0 1.75rem}
+.trace{fill:none;stroke:var(--line);stroke-width:1.2}
+.dim{stroke:var(--line);stroke-width:1;opacity:.7}
+.path{fill:none;stroke:var(--signal);stroke-width:2.2;stroke-dasharray:6 6}
+.lbl{fill:#cfe0ee;font:500 13px "Archivo",Arial,sans-serif;font-stretch:105%}
+main{padding:2.5rem 0 3rem}
+h1.page{font-family:"Archivo",Arial,sans-serif;font-stretch:115%;font-weight:800;font-size:clamp(1.9rem,5vw,2.6rem);line-height:1.1;margin:0 0 .4rem}
+h2{font-family:"Archivo",Arial,sans-serif;font-stretch:110%;font-weight:700;font-size:1.35rem;line-height:1.25;margin:2.25rem 0 .5rem}
+p,li{max-width:68ch}
+ul{padding-left:1.2rem}
+.meta{color:var(--muted);font-size:1rem;margin:0 0 2rem}
+.panel{border-left:3px solid var(--plate);padding:.25rem 0 .25rem 1rem;margin:1.5rem 0}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:.95rem;padding:1.5rem 0 2.5rem}
+footer a{color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.path{animation:dash 14s linear infinite}@keyframes dash{to{stroke-dashoffset:-240}}}
