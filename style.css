@@ -30,3 +30,7 @@ ul{padding-left:1.2rem}
 footer{border-top:1px solid var(--line);color:var(--muted);font-size:.95rem;padding:1.5rem 0 2.5rem}
 footer a{color:var(--muted)}
 @media (prefers-reduced-motion:no-preference){.path{animation:dash 14s linear infinite}@keyframes dash{to{stroke-dashoffset:-240}}}
+.yt{border:2px solid #cc0000;border-radius:8px;padding:.5rem 1.25rem 1rem;margin:2.25rem 0;background:#fff}
+.yt h2{margin-top:.75rem}
+.ytword{color:#cc0000}
+code{font-size:.95em;background:#e3ecf3;padding:.05em .3em;border-radius:3px}
